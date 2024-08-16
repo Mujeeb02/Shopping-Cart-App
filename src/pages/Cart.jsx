@@ -35,8 +35,9 @@ const Cart = () => {
                   <p className='text-xl w-[40vw] sm:w-[20vw] md:w-[25vw] xl:w-[10vw]'>
                     <span className='text-gray-700 font-semibold text-xl'>Total Items: {cart.length}</span>
                   </p>
-                  <span className='w-[70vw] sm:w-[30vw] md:w-[25vw] xl:w-[10vw] text-gray-700 font-semibold'>Total Amount: <span className='font-bold text-xl'>${totalAmount}</span> </span>
-
+                  <span className='w-[70vw] sm:w-[30vw] md:w-[25vw] lg:w-[] xl:w-[15vw] text-gray-700 font-semibold'>SubTotal Amount: <span className='font-bold text-xl'>${totalAmount}</span> </span>
+                  <span className='w-[70vw] sm:w-[30vw] md:w-[25vw] xl:w-[15vw] text-gray-700 font-semibold'>Discount(10%): <span className='font-bold text-xl'>${totalAmount/10}</span> </span>
+                  <span className='w-[70vw] sm:w-[30vw] md:w-[25vw] xl:w-[15vw] text-gray-700 font-semibold'>Total Amount: <span className='font-bold text-xl'>${totalAmount-totalAmount/10}</span> </span>
                   <button className='w-[70vw] sm:w-[40vw] md:w-[32vw] xl:w-[20vw] bg-green-700 hover:bg-slate-50 rounded-lg text-white 
                       transition duration-300 ease-linear mt-5 border-2 border-green-600 font-bold hover:text-green-700 p-3 px-12 text-xl'>
                     CheckOut Now
